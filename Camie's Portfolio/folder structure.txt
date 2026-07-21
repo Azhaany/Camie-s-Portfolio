@@ -1,0 +1,22 @@
+camilia-portfolio/
+├── index.html
+├── 404.html
+├── style.css
+├── script.js
+├── robots.txt
+├── README.md
+├── images/
+│   ├── pic1.jpeg
+│   ├── pic3.jpeg
+│   ├── pic001.jpeg
+│   ├── camie001.jpeg
+│   ├── camie002.jpeg
+│   ├── camie003.jpeg
+│   ├── camie004.jpeg
+│   ├── pic006.jpeg
+│   ├── bukoto001.jpeg
+│   ├── bukoto002.jpeg
+│   ├── bukoto003.jpeg
+│   └── bukoto004.jpeg
+└── icons/
+    └── 3116491.png

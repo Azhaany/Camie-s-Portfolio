@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Camila A. offers luxury Airbnb experiences with curated stays, elegant hospitality, and seamless guest support.">
+    <meta name="theme-color" content="#F8F7F4">
+    <title>Camila A. | Luxury Airbnb Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-logo">CAMILA.A</div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="toast" id="toast">✓ Message sent successfully!</div>
+
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-logo">Camila<span>.</span>A</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" onclick="closeNav()">Home</a></li>
+            <li><a href="#about" onclick="closeNav()">About</a></li>
+            <li><a href="#properties" onclick="closeNav()">Properties</a></li>
+            <li><a href="#testimonials" onclick="closeNav()">Reviews</a></li>
+            <li><a href="#contact" class="nav-cta" onclick="closeNav()">Book Now</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1><span>Exceptional</span> Stays for Discerning Guests</h1>
+                <p class="hero-subtitle">I transform beautiful spaces into unforgettable experiences. Every property is meticulously managed for comfort, style, and that perfect touch of home.</p>
+                <div class="hero-buttons">
+                    <a href="#properties" class="btn btn-primary">Explore Properties</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat"><div class="hero-stat-number" data-count="150">0</div><div class="hero-stat-label">Happy Guests</div></div>
+                    <div class="hero-stat"><div class="hero-stat-number" data-count="12">0</div><div class="hero-stat-label">Properties</div></div>
+                    <div class="hero-stat"><div class="hero-stat-number" data-count="5">0</div><div class="hero-stat-label">Years Exp.</div></div>
+                </div>
+            </div>
+            <div class="hero-image-wrap">
+                <div class="hero-image">
+                    <img src="images/pic1.jpeg" alt="Luxury Airbnb property curated by Camila A." loading="eager">
+                    <div class="hero-image-badge">Curated Luxury</div>
+                </div>
+                <div class="hero-accent-circle"></div><div class="hero-accent-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="section-header reveal"><div class="section-label">About Me</div><h2 class="section-title">The Heart Behind the Hospitality</h2><p class="section-desc">With a passion for creating memorable guest experiences, I've dedicated myself to elevating Airbnb hosting into an art form.</p></div>
+        <div class="about-grid">
+            <div class="about-image-wrap reveal"><div class="icon-placeholder">👩‍💼</div><div class="about-badge"><div class="about-badge-number">98%</div><div class="about-badge-text">Guest Satisfaction</div></div></div>
+            <div class="reveal">
+                <p class="about-intro">Hello! I'm <strong>Camila Linda A.</strong>, a dedicated Airbnb entrepreneur. I personally oversee every property, ensuring immaculate cleanliness and thoughtful amenities. I believe every stay should feel effortless, comfortable, and memorable. With a passion for exceptional hospitality and a keen eye for detail, I specialize in creating welcoming Airbnb experiences that make every guest feel at home.</p>
+                <div class="about-features">
+                    <div class="about-feature"><div class="about-feature-icon">✨</div><div class="about-feature-text"><strong>Thoughtful Design</strong><span>Every space curated with intention</span></div></div>
+                    <div class="about-feature"><div class="about-feature-icon">🛡️</div><div class="about-feature-text"><strong>Trust & Safety</strong><span>Verified properties, secure stays</span></div></div>
+                    <div class="about-feature"><div class="about-feature-icon">🧹</div><div class="about-feature-text"><strong>Immaculate Cleanliness</strong><span>Hotel-grade standards</span></div></div>
+                    <div class="about-feature"><div class="about-feature-icon">💬</div><div class="about-feature-text"><strong>24/7 Support</strong><span>Always here when you need us</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="properties">
+        <div class="section-header center reveal"><div class="section-label">Our Properties</div><h2 class="section-title">Handpicked Stays You'll Love</h2><p class="section-desc">Explore a curated collection of premium Airbnb properties.</p></div>
+        <div class="properties-grid">
+            <div class="property-card reveal"><div class="property-image"><img src="images/pic3.jpeg" alt="Kyanja" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="property-badge">Popular</div></div><div class="property-body"><div class="property-location"> Kyanja-Kampala, Uganda</div><div class="property-name">Kyanja</div><div class="property-desc">A lush tropical retreat with private pool and modern interiors.</div><div class="property-meta"><span>🛏️ 1 Bed</span><span>🚿 1 Bathroom</span><span>👥 2 Guests</span></div><div class="property-price">Ugx 250,000 <small>/ night</small></div></div></div>
+            <div class="property-card reveal">
+                <div class="property-slider" id="camila-villa-slider">
+                    <div class="slider-track">
+                        <div class="slide"><img src="images/pic001.jpeg" alt="Camila Villa Escapes - Main View" loading="lazy"></div>
+                        <div class="slide"><img src="images/camie001.jpeg" alt="Camila Villa Escapes - View 1" loading="lazy"></div>
+                        <div class="slide"><img src="images/camie002.jpeg" alt="Camila Villa Escapes - View 2" loading="lazy"></div>
+                        <div class="slide"><img src="images/camie003.jpeg" alt="Camila Villa Escapes - View 3" loading="lazy"></div>
+                        <div class="slide"><img src="images/camie004.jpeg" alt="Camila Villa Escapes - View 4" loading="lazy"></div>
+                    </div>
+
+                    <!-- Top-Left 'New' Badge -->
+                    <div class="property-badge">New</div>
+
+                    <!-- Top-Right Heart Icon -->
+                    <button class="slider-heart-btn" aria-label="Save to favorites" title="Save to favorites">
+                        <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Left and Right Navigation Arrows -->
+                    <button class="slider-arrow prev-arrow" aria-label="Previous Image">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="slider-arrow next-arrow" aria-label="Next Image">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+
+                    <!-- Bottom Dots Indicator -->
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                    </div>
+
+                    <!-- Bottom-Right Image Counter -->
+                    <div class="slider-counter">
+                        <span class="current-slide">1</span>/<span class="total-slides">5</span>
+                    </div>
+                </div>
+                <div class="property-body">
+                    <div class="property-location"> Kisaasi-Bukoto, Kampala</div>
+                    <div class="property-name">Camila Villa Escapes</div>
+                    <div class="property-desc">Chic penthouse with shade extension terrace and contemporary African art.</div>
+                    <div class="property-meta"><span>🛏️ 1 Bed</span><span>🚿 1 Bath</span><span>👥 2 Guests</span></div>
+                    <div class="property-price">Ugx 150,000 <small>/ night</small></div>
+                    <div class="property-price-monthly">$1,200 <small>/ month</small></div>
+                </div>
+            </div>
+            <div class="property-card reveal">
+                <div class="property-slider" id="bukoto-slider">
+                    <div class="slider-track">
+                        <div class="slide"><img src="images/pic006.jpeg" alt="Bukoto Apartments - Main View" loading="lazy"></div>
+                        <div class="slide"><img src="images/bukoto001.jpeg" alt="Bukoto Apartments - View 1" loading="lazy"></div>
+                        <div class="slide"><img src="images/bukoto002.jpeg" alt="Bukoto Apartments - View 2" loading="lazy"></div>
+                        <div class="slide"><img src="images/bukoto003.jpeg" alt="Bukoto Apartments - View 3" loading="lazy"></div>
+                        <div class="slide"><img src="images/bukoto004.jpeg" alt="Bukoto Apartments - View 4" loading="lazy"></div>
+                    </div>
+
+                    <!-- Top-Left 'New' Badge -->
+                    <div class="property-badge">New</div>
+
+                    <!-- Top-Right Heart Icon -->
+                    <button class="slider-heart-btn" aria-label="Save to favorites" title="Save to favorites">
+                        <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Left and Right Navigation Arrows -->
+                    <button class="slider-arrow prev-arrow" aria-label="Previous Image">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="slider-arrow next-arrow" aria-label="Next Image">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+
+                    <!-- Bottom Dots Indicator -->
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                    </div>
+
+                    <!-- Bottom-Right Image Counter -->
+                    <div class="slider-counter">
+                        <span class="current-slide">1</span>/<span class="total-slides">5</span>
+                    </div>
+                </div>
+                <div class="property-body">
+                    <div class="property-location">Bukoto-Kisasi, Uganda</div>
+                    <div class="property-name">Bukoto Apartments</div>
+                    <div class="property-desc">Bukoto Villas shade extension terrace and contemporary African art.</div>
+                    <div class="property-meta"><span>🛏️ 1 Bed</span><span>🚿 1 Bath</span><span>👥 2 Guests</span></div>
+                    <div class="property-price">Ugx 180,000 <small>/ night</small></div>
+                    <div class="property-price-monthly">$1,200 <small>/ month</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="testimonials">
+        <div class="section-header center reveal"><div class="section-label">Guest Reviews</div><h2 class="section-title">What Our Guests Say</h2></div>
+        <div class="testimonials-slider reveal">
+            <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Camila.A's villa exceeded every expectation. The attention to detail is remarkable."</p><div class="testimonial-author"><div class="testimonial-avatar">S</div><div><div class="testimonial-name">Sarah M.</div><div class="testimonial-role">Returning Guest</div></div></div></div>
+            <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"The penthouse was absolutely stunning. Camila.A even arranged a private chef for us."</p><div class="testimonial-author"><div class="testimonial-avatar">J</div><div><div class="testimonial-name">Ahmad K.</div><div class="testimonial-role">Business Traveler</div></div></div></div>
+            <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Our family loved the lakeside cottage. Impeccably clean and so peaceful."</p><div class="testimonial-author"><div class="testimonial-avatar">A</div><div><div class="testimonial-name">Amina R.</div><div class="testimonial-role">Family Traveler</div></div></div></div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="section-header reveal"><div class="section-label">Get in Touch</div><h2 class="section-title">Let's Plan Your Perfect Stay</h2></div>
+        <div class="contact-grid reveal">
+            <div class="contact-info"><h3>Contact Details</h3><p class="contact-intro">I respond personally to every inquiry.</p><div class="contact-detail"><div class="contact-detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"></path><path d="m21 7-9 6-9-6"></path></svg></div><div>ainomugishalinda8@gmail.com</div></div><div class="contact-detail"><div class="contact-detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.87.33 1.72.63 2.54a2 2 0 0 1-.45 2.11L7.1 8.1a16 16 0 0 0 6 6l.73-.14a2 2 0 0 1 2.11.45c.82.3 1.67.51 2.54.63A2 2 0 0 1 22 16.92z"></path></svg></div><div>+256 743 867 4324 / +256 703 958 434</div></div><div class="contact-detail"><div class="contact-detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg></div><div>Kampala, Uganda</div></div></div>
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/ainomugishalinda8@gmail.com" method="POST" accept-charset="UTF-8"><input type="text" name="name" placeholder="Your Name" required><input type="email" name="email" placeholder="Your Email" required><textarea name="message" placeholder="Tell me about your ideal stay..." required></textarea><input type="hidden" name="_subject" value="New inquiry from Camila A. portfolio"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><button type="submit" class="btn btn-primary">Send Message</button></form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">Camila<span>.</span>A</div>
+        <p>Creating extraordinary stays, one guest at a time.</p>
+        <div class="footer-socials">
+            <a class="social-tiktok" href="https://www.tiktok.com/@thatapartmentbabe" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <img src="icons/3116491.png" alt="TikTok">
+            </a>
+            <a class="social-whatsapp" href="https://wa.me/256743867324" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="Chat on WhatsApp">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#25D366">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c-.001 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662a11.818 11.818 0 005.71 1.461h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.475-8.412"/>
+                </svg>
+            </a>
+        </div>
+        <p style="font-size:0.75rem;">© 2026 Camila A. All rights reserved.</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/256743867324" target="_blank" rel="noopener noreferrer" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+        <svg class="whatsapp-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c-.001 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662a11.818 11.818 0 005.71 1.461h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.475-8.412"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
