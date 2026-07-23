@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "camieportfolio",
+  "compatibility_date": "2026-07-23",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "Camie's Portfolio"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
